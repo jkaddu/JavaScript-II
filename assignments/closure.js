@@ -1,6 +1,16 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+function game(sport) {
+  let score = 0;
+  return function points() {
+    score++;
+    return `Your ${sport} game score is ${score}`
+  }
+}
+
+console.log(game())
+
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {

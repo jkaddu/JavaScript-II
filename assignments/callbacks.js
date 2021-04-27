@@ -1,6 +1,6 @@
 // Create a callback function and invoke the function to test your work. You have been provided an example of a problem and a solution to see how this works with our items array.  Study both the problem and the solution to figure out the rest of the problems.
 
-const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
+const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum', 'Gum'];
 
 
   //Given this problem: 
@@ -42,6 +42,7 @@ function last2(arr, cb) {
   // last passes the last item of the array into the callback.
   return cb(arr.slice(-1));
 }
+
 
 last2(items, last => {
   console.log(last)
@@ -97,8 +98,19 @@ console.log(contains2("Notebook", items))
 
 /* STRETCH PROBLEM */
 
-function removeDuplicates(array, cb) {
-  // removeDuplicates removes all duplicate values from the given array.
-  // Pass the duplicate free array to the callback function.
-  // Do not mutate the original array.
-}
+// function removeDuplicates(array, cb) {
+//   // removeDuplicates removes all duplicate values from the given array.
+//   // Pass the duplicate free array to the callback function.
+//   // Do not mutate the original array.
+//   let free = [];
+//   array.filter(item => {
+//     if (!item === item) {
+//     return item
+//   }})
+//   return cb(free.push(array));
+  
+// }
+
+// removeDuplicates(items, noDuplicates => {
+//   console.log(noDuplicates)
+// });
